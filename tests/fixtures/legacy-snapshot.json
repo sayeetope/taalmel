@@ -1,0 +1,1477 @@
+{
+  "generatedFrom": "legacy engine.js + matching.js + mathtools.js @ pre-revamp",
+  "campus": {
+    "aps": [
+      {
+        "id": 1,
+        "x": -210,
+        "y": -170,
+        "radius": 95,
+        "label": "Library"
+      },
+      {
+        "id": 2,
+        "x": -80,
+        "y": -190,
+        "radius": 95,
+        "label": "Lab A"
+      },
+      {
+        "id": 3,
+        "x": 70,
+        "y": -150,
+        "radius": 95,
+        "label": "Lab B"
+      },
+      {
+        "id": 4,
+        "x": 190,
+        "y": -120,
+        "radius": 95,
+        "label": "Admin"
+      },
+      {
+        "id": 5,
+        "x": -230,
+        "y": -20,
+        "radius": 95,
+        "label": "Cafeteria"
+      },
+      {
+        "id": 6,
+        "x": -60,
+        "y": -30,
+        "radius": 95,
+        "label": "Lecture 1"
+      },
+      {
+        "id": 7,
+        "x": 90,
+        "y": -10,
+        "radius": 95,
+        "label": "Lecture 2"
+      },
+      {
+        "id": 8,
+        "x": 210,
+        "y": 30,
+        "radius": 95,
+        "label": "Workshop"
+      },
+      {
+        "id": 9,
+        "x": -170,
+        "y": 130,
+        "radius": 95,
+        "label": "Dorm A"
+      },
+      {
+        "id": 10,
+        "x": -20,
+        "y": 150,
+        "radius": 95,
+        "label": "Dorm B"
+      },
+      {
+        "id": 11,
+        "x": 130,
+        "y": 140,
+        "radius": 95,
+        "label": "Gym"
+      },
+      {
+        "id": 12,
+        "x": 60,
+        "y": 220,
+        "radius": 95,
+        "label": "Auditorium"
+      }
+    ],
+    "edges": 20
+  },
+  "graphs": {
+    "campus": {
+      "n": 12,
+      "edges": 20,
+      "degreeSeq": [
+        5,
+        5,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "maxDegree": 5,
+      "clique": {
+        "clique": [
+          3,
+          6,
+          2
+        ],
+        "size": 3
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "greedyColors": 4,
+      "welsh": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "welshColors": 3,
+      "dsatur": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      "dsaturColors": 3,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "colors": 3
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2
+        ],
+        "colors": 3,
+        "score": 2
+      },
+      "tColor5_13": {
+        "assignment": [
+          1,
+          6,
+          1,
+          11,
+          6,
+          11,
+          6,
+          1,
+          1,
+          6,
+          11,
+          1
+        ],
+        "numDistinct": 3,
+        "span": 10
+      },
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          1,
+          4,
+          4,
+          7,
+          10,
+          1,
+          1,
+          4,
+          7,
+          1
+        ],
+        "numDistinct": 4,
+        "span": 9
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        -1620,
+        8400,
+        -20057,
+        29231,
+        -28926,
+        20402,
+        -10457,
+        3891,
+        -1029,
+        184,
+        -20,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 12,
+        "E": 20,
+        "bound": 30,
+        "margin": 10,
+        "explanation": "E = 20 ≤ 3V − 6 = 30: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 4,
+          "optimal": false,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": 16
+        }
+      ]
+    },
+    "K4": {
+      "n": 4,
+      "edges": 6,
+      "degreeSeq": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxDegree": 3,
+      "clique": {
+        "clique": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "size": 4
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "greedyColors": 4,
+      "welsh": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "welshColors": 4,
+      "dsatur": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dsaturColors": 4,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "colors": 4
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "colors": 3,
+        "score": 1
+      },
+      "tColor5_13": null,
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          7,
+          10
+        ],
+        "numDistinct": 4,
+        "span": 9
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        -6,
+        11,
+        -6,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 4,
+        "E": 6,
+        "bound": 6,
+        "margin": 0,
+        "explanation": "E = 6 ≤ 3V − 6 = 6: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": 4
+        }
+      ]
+    },
+    "C5": {
+      "n": 5,
+      "edges": 5,
+      "degreeSeq": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "maxDegree": 2,
+      "clique": {
+        "clique": [
+          0,
+          1
+        ],
+        "size": 2
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "greedyColors": 3,
+      "welsh": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "welshColors": 3,
+      "dsatur": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "dsaturColors": 3,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "colors": 3
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "colors": 3,
+        "score": 0
+      },
+      "tColor5_13": {
+        "assignment": [
+          1,
+          6,
+          1,
+          6,
+          11
+        ],
+        "numDistinct": 3,
+        "span": 10
+      },
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          1,
+          4,
+          7
+        ],
+        "numDistinct": 3,
+        "span": 6
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        4,
+        -10,
+        10,
+        -5,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 5,
+        "E": 5,
+        "bound": 9,
+        "margin": 4,
+        "explanation": "E = 5 ≤ 3V − 6 = 9: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": 5
+        }
+      ]
+    },
+    "K5": {
+      "n": 5,
+      "edges": 10,
+      "degreeSeq": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "maxDegree": 4,
+      "clique": {
+        "clique": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "size": 5
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "greedyColors": 5,
+      "welsh": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "welshColors": 5,
+      "dsatur": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "dsaturColors": 5,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "colors": 5
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "colors": 3,
+        "score": 2
+      },
+      "tColor5_13": null,
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          7,
+          10,
+          13
+        ],
+        "numDistinct": 5,
+        "span": 12
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        24,
+        -50,
+        35,
+        -10,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": false,
+        "V": 5,
+        "E": 10,
+        "bound": 9,
+        "margin": -1,
+        "explanation": "E = 10 > 3V − 6 = 9: the graph is NOT planar."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 5,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 5,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 5,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 5,
+          "optimal": true,
+          "nodesExplored": 5
+        }
+      ]
+    },
+    "K33": {
+      "n": 6,
+      "edges": 9,
+      "degreeSeq": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxDegree": 3,
+      "clique": {
+        "clique": [
+          0,
+          3
+        ],
+        "size": 2
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "greedyColors": 2,
+      "welsh": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "welshColors": 2,
+      "dsatur": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "dsaturColors": 2,
+      "exact": {
+        "coloring": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "colors": 2
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "colors": 2,
+        "score": 0
+      },
+      "tColor5_13": {
+        "assignment": [
+          1,
+          1,
+          1,
+          6,
+          6,
+          6
+        ],
+        "numDistinct": 2,
+        "span": 5
+      },
+      "tColor3_13": {
+        "assignment": [
+          1,
+          1,
+          1,
+          4,
+          4,
+          4
+        ],
+        "numDistinct": 2,
+        "span": 3
+      },
+      "tColor5_6": {
+        "assignment": [
+          1,
+          1,
+          1,
+          6,
+          6,
+          6
+        ],
+        "numDistinct": 2,
+        "span": 5
+      },
+      "chromaticPolynomial": [
+        0,
+        -31,
+        78,
+        -75,
+        36,
+        -9,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 6,
+        "E": 9,
+        "bound": 12,
+        "margin": 3,
+        "explanation": "E = 9 ≤ 3V − 6 = 12: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": true,
+      "hall": true,
+      "matching": 3,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": 6
+        }
+      ]
+    },
+    "Petersen": {
+      "n": 10,
+      "edges": 15,
+      "degreeSeq": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxDegree": 3,
+      "clique": {
+        "clique": [
+          0,
+          1
+        ],
+        "size": 2
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "greedyColors": 3,
+      "welsh": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "welshColors": 3,
+      "dsatur": [
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "dsaturColors": 3,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "colors": 3
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "colors": 3,
+        "score": 0
+      },
+      "tColor5_13": {
+        "assignment": [
+          1,
+          6,
+          1,
+          6,
+          11,
+          6,
+          1,
+          11,
+          11,
+          6
+        ],
+        "numDistinct": 3,
+        "span": 10
+      },
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          1,
+          4,
+          7,
+          4,
+          1,
+          7,
+          7,
+          4
+        ],
+        "numDistinct": 3,
+        "span": 6
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        -704,
+        2606,
+        -4305,
+        4275,
+        -2861,
+        1353,
+        -455,
+        105,
+        -15,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 10,
+        "E": 15,
+        "bound": 24,
+        "margin": 9,
+        "explanation": "E = 15 ≤ 3V − 6 = 24: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 3,
+          "optimal": true,
+          "nodesExplored": 10
+        }
+      ]
+    },
+    "hallViolation": {
+      "n": 5,
+      "edges": 3,
+      "degreeSeq": [
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "maxDegree": 3,
+      "clique": {
+        "clique": [
+          3,
+          0
+        ],
+        "size": 2
+      },
+      "connected": false,
+      "components": 2,
+      "articulation": [
+        3
+      ],
+      "greedy": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "greedyColors": 2,
+      "welsh": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "welshColors": 2,
+      "dsatur": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "dsaturColors": 2,
+      "exact": {
+        "coloring": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "colors": 2
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "colors": 2,
+        "score": 0
+      },
+      "tColor5_13": {
+        "assignment": [
+          1,
+          1,
+          1,
+          6,
+          1
+        ],
+        "numDistinct": 2,
+        "span": 5
+      },
+      "tColor3_13": {
+        "assignment": [
+          1,
+          1,
+          1,
+          4,
+          1
+        ],
+        "numDistinct": 2,
+        "span": 3
+      },
+      "tColor5_6": {
+        "assignment": [
+          1,
+          1,
+          1,
+          6,
+          1
+        ],
+        "numDistinct": 2,
+        "span": 5
+      },
+      "chromaticPolynomial": [
+        0,
+        0,
+        -1,
+        3,
+        -3,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 5,
+        "E": 3,
+        "bound": 9,
+        "margin": 6,
+        "explanation": "E = 3 ≤ 3V − 6 = 9: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": true,
+      "hall": false,
+      "matching": 1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 2,
+          "optimal": true,
+          "nodesExplored": 5
+        }
+      ]
+    },
+    "pigeonholeCrowded": {
+      "n": 4,
+      "edges": 6,
+      "degreeSeq": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxDegree": 3,
+      "clique": {
+        "clique": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "size": 4
+      },
+      "connected": true,
+      "components": 1,
+      "articulation": [],
+      "greedy": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "greedyColors": 4,
+      "welsh": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "welshColors": 4,
+      "dsatur": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dsaturColors": 4,
+      "exact": {
+        "coloring": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "colors": 4
+      },
+      "greedyK3": {
+        "coloring": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "colors": 3,
+        "score": 1
+      },
+      "tColor5_13": null,
+      "tColor3_13": {
+        "assignment": [
+          1,
+          4,
+          7,
+          10
+        ],
+        "numDistinct": 4,
+        "span": 9
+      },
+      "tColor5_6": null,
+      "chromaticPolynomial": [
+        0,
+        -6,
+        11,
+        -6,
+        1
+      ],
+      "planar": {
+        "isPossiblyPlanar": true,
+        "V": 4,
+        "E": 6,
+        "bound": 6,
+        "margin": 0,
+        "explanation": "E = 6 ≤ 3V − 6 = 6: the necessary condition is satisfied (graph MAY be planar)."
+      },
+      "bipartite": false,
+      "hall": null,
+      "matching": -1,
+      "channelModel3": {
+        "assignment": [
+          3,
+          2,
+          1,
+          -1
+        ],
+        "matchingSize": 3,
+        "allAssigned": false
+      },
+      "benchmark": [
+        {
+          "algorithm": "Greedy",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Welsh–Powell",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "DSatur",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": null
+        },
+        {
+          "algorithm": "Exact (Backtracking)",
+          "colors": 4,
+          "optimal": true,
+          "nodesExplored": 4
+        }
+      ]
+    }
+  },
+  "suite": [
+    {
+      "name": "K₄",
+      "expectedChi": 4,
+      "exactChi": 4,
+      "dsaturChi": 4,
+      "cliqueNumber": 4,
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "C₅",
+      "expectedChi": 3,
+      "exactChi": 3,
+      "dsaturChi": 3,
+      "cliqueNumber": 2,
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "K₅",
+      "expectedChi": 5,
+      "exactChi": 5,
+      "dsaturChi": 5,
+      "cliqueNumber": 5,
+      "passed": true,
+      "details": {
+        "planarity": {
+          "planar": {
+            "isPossiblyPlanar": false,
+            "V": 5,
+            "E": 10,
+            "bound": 9,
+            "margin": -1,
+            "explanation": "E = 10 > 3V − 6 = 9: the graph is NOT planar."
+          },
+          "kuratowski": {
+            "hasK5": true,
+            "hasK33": false,
+            "nonPlanarEvidence": "Contains K₅ as a subgraph → graph is non-planar (Kuratowski)."
+          }
+        }
+      }
+    },
+    {
+      "name": "K₃,₃",
+      "expectedChi": 2,
+      "exactChi": 2,
+      "dsaturChi": 2,
+      "cliqueNumber": 2,
+      "passed": true,
+      "details": {
+        "planarity": {
+          "planar": {
+            "isPossiblyPlanar": true,
+            "V": 6,
+            "E": 9,
+            "bound": 12,
+            "margin": 3,
+            "explanation": "E = 9 ≤ 3V − 6 = 12: the necessary condition is satisfied (graph MAY be planar)."
+          },
+          "kuratowski": {
+            "hasK5": false,
+            "hasK33": true,
+            "nonPlanarEvidence": "Contains K₃,₃ as a subgraph → graph is non-planar (Kuratowski)."
+          }
+        },
+        "bipartite": true,
+        "bipartiteMatch": true
+      }
+    },
+    {
+      "name": "Petersen",
+      "expectedChi": 3,
+      "exactChi": 3,
+      "dsaturChi": 3,
+      "cliqueNumber": 2,
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "Hall Violation Bottleneck",
+      "expectedChi": 2,
+      "exactChi": 2,
+      "dsaturChi": 2,
+      "cliqueNumber": 2,
+      "passed": true,
+      "details": {
+        "bipartite": true,
+        "bipartiteMatch": true
+      }
+    },
+    {
+      "name": "Pigeonhole 4-Clique (Crowded)",
+      "expectedChi": 4,
+      "exactChi": 4,
+      "dsaturChi": 4,
+      "cliqueNumber": 4,
+      "passed": true,
+      "details": {}
+    }
+  ]
+}
