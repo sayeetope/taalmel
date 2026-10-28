@@ -1,0 +1,68 @@
+@theme {
+  /* ── Surfaces ───────────────────────────────────────────────────── */
+  --color-base: #080b16;
+  --color-surface: #0f1428;
+  --color-raised: #161c38;
+  --color-line: #232b4f;
+  /* #3A4575 measured 1.99:1 on surfaces; lifted to pass the 3:1 UI rule. */
+  --color-line-strong: #5f6a9e;
+
+  /* ── Text ───────────────────────────────────────────────────────── */
+  --color-ink: #eef0f8;
+  --color-ink-2: #aab1cc;
+  --color-ink-3: #8088ac;
+
+  /* ── Accent ─────────────────────────────────────────────────────── */
+  --color-accent: #ffb224;
+  --color-accent-hover: #ffc450;
+  --color-accent-pressed: #e89a00;
+  --color-accent-soft: #3a2a10;
+  --color-on-accent: #0a0d1a;
+
+  /* ── Semantics ──────────────────────────────────────────────────── */
+  --color-danger: #ff5c3a;
+  --color-danger-soft: #3a1714;
+  --color-success: #6fe3a6;
+  --color-success-soft: #102a1f;
+  --color-warning: #ffcf6e;
+  --color-warning-soft: #32260f;
+
+  /* ── Type ───────────────────────────────────────────────────────── */
+  --font-display: 'Rajdhani', 'Hind', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Hind', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  --text-2xs: 0.6875rem; /* 11px — only for canvas-adjacent metadata */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-display: clamp(2.5rem, 4.6vw, 4.25rem);
+  --text-display-sm: clamp(2rem, 3.4vw, 2.75rem);
+
+  /* ── Shape ──────────────────────────────────────────────────────── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* ── Motion ─────────────────────────────────────────────────────── */
+  --ease-settle: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+}
+
+/* Non-Tailwind aliases used by canvas-adjacent CSS and inline SVG. */
+:root {
+  --grid-line: #1b2440;
+  --shadow-panel: 0 18px 48px -24px rgb(0 0 0 / 0.85);
+  --header-h: 64px;
+  --toolbar-h: 52px;
+  color-scheme: dark;
+}
