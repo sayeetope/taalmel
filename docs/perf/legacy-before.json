@@ -1,0 +1,24 @@
+{
+  "url": "http://127.0.0.1:8811/index.html",
+  "viewport": "1440x900",
+  "apCount": 12,
+  "dragMoves": 90,
+  "dragRenders": 91,
+  "frame": {
+    "p50": 16.7,
+    "p95": 849.9,
+    "max": 1166.7,
+    "count": 239
+  },
+  "longTasks": {
+    "count": 90,
+    "maxMs": 1175
+  },
+  "radius": {
+    "rendersOnInput": 0,
+    "defaultRadiusBefore": 80,
+    "defaultRadiusAfter": 160,
+    "discsChanged": false
+  },
+  "pageErrors": []
+}
